@@ -13,10 +13,10 @@ class Config(object):
     # get a token from https://chatbase.com
     CHAT_BASE_TOKEN = os.environ.get("CHAT_BASE_TOKEN", "")
     # get a token from @BotFather
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "5592542375:AAG6FIAZE4GLB7EAKwpxUmCI_UPFIpabl8c")
     # The Telegram API things
-    API_ID = int(os.environ.get("API_ID", 12345))
-    API_HASH = os.environ.get("API_HASH")
+    API_ID = int(os.environ.get("API_ID", "11004381"))
+    API_HASH = os.environ.get("API_HASH", "8e0588044fcf7672cfe1341185bfc94c")
     # Get these values from my.telegram.org
     # Array to store users who are authorized to use the bot
 
@@ -44,15 +44,15 @@ class Config(object):
     PROCESS_MAX_TIMEOUT = 3700
     # watermark file
     DEF_WATER_MARK_FILE = ""
-    DATABASE_URL = os.environ.get("DATABASE_URL", "")
+    DATABASE_URL = os.environ.get("DATABASE_URL", "mongodb+srv://ashishtandi:ashishtandi@cluster0.p2gli.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
     SESSION_NAME = os.environ.get("SESSION_NAME", "Rename-Bot-0")
-    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", -100))
+    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1001585763504"))
     LOGGER = logging
-    OWNER_ID = int(os.environ.get("OWNER_ID", ""))
+    OWNER_ID = int(os.environ.get("OWNER_ID", "1260704822"))
     # Update channel for Force Subscribe
     UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", "")
     TG_MIN_FILE_SIZE = 2097152000
-    BOT_USERNAME = os.environ.get("BOT_USERNAME", "TellyUploaderBot")
+    BOT_USERNAME = os.environ.get("BOT_USERNAME", "urluplobot")
     PRO_USERS = list(set(int(x) for x in os.environ.get("PRO_USERS", "0").split()))
     PRO_USERS.append(OWNER_ID)
     BROADCAST_AS_COPY = bool(os.environ.get("BROADCAST_AS_COPY", "False"))
